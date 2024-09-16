@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>UNIVERSE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Gugi&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./main.js"></script>
+    </head>
+    
+    <body class="overflow-x-hidden">
+        <style>
+            body,html{
+                margin: 0;
+                font-family: 'Dela Gothic One', sans-serif;
+            }
+            ::-webkit-scrollbar{
+                background-color: white;
+                width: 10px;
+            }
+            ::-webkit-scrollbar-thumb{
+                background-color: black;
+                border-radius: 100px;
+            }
+        </style>
+        <div class="w-svw h-svh relative overflow-hidden">
+        <nav class="w-smv h-20 overflow-hidden flex justify-between box-border px-5 md:px-10"> 
+            <!-- options -->
+            <div id="bar" class="w-80 duration-500 h-screen bg-white shadow-2xl fixed left-0 box-border pt-24 text-center -translate-x-full">
+                <a style="font-family: 'Dela Gothic One', sans-serif;" class="font-thin">Home</a>
+            </div>
+            <!-- options -->
+            <button class="w-8 z-50 h-5 bg-white flex flex-col justify-between my-auto" onclick="sidebar()">
+                <span id="bar1" class="w-full block h-1 bg-black rounded-full duration-500"></span>
+                <span id="bar2" class="w-full block h-1 bg-black rounded-full duration-500"></span>
+                <span id="bar3" class="w-full block h-1 bg-black rounded-full duration-500"></span>
+            </button>
+            <h1 style="font-family: 'Gugi', sans-serif;" class="my-auto uppercase text-2xl">universe</h1>
+            <div class="flex w-fit justify-between">
+                <button class="w-fit my-auto flex overflow-hidden  rounded-full px-0 py-1"><img src="./search.png" class="w-6 my-auto mr-0 opacity-1"></button>
+                <button class="w-7 my-auto relative mx-5">
+                    <img src="./cart.png">
+                    <div class="w-4 h-4 bg-black font-bold text-white leading-tight text-[12px] rounded-full font-sans absolute -top-2 -right-2">0</div>
+                </button>
+                <button class="w-6 y-auto"><img src="./user.png"></button>
+            </div>
+        </nav>
+        <h1  class="font-serif text-[60px] capitalize leading-normal mt-24 ml-14 font-bold">Discover Your Perfect <br>Style</h1>
+        <p class=" mt-2 ml-14 font-serif text-lg" >Unleash your fashion potential with our curated collection of trendy and 
+            timeless pieces. <br>Whether you're dressing for work, play, or everything in between, we’ve got you covered. <br>Shop 
+            the latest in fashion, fit for every occasion and season</p>
+            <button class="h-14 w-52 rounded-full border-2 border-black bg-white mt-5 ml-14">Explore More</button>
+        <div class="absolute w-[1000px] h-[650px] rounded-full -rotate-45 bg-green-200 overflow-clip -z-50 -right-52 -top-12">
+            <img src="./man.png" class=" absolute rotate-45 left-24 w-2/5 ">
+        </div>
+        </div>
+        <div class="grid grid-cols-4 w-svw h-fit pt-24 gap-8 py-8">
+            <div class="w-60 h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">t-shirt</div>
+            <div class="w-60 h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">casual</div>
+            <div class="w-60 h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">sweater</div>
+            <div class="w-60 h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">jacket</div>
+            <div class="w-60 h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">jeans</div>
+            <div class="w-60 h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">pants</div>
+            <div class="w-60 h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">cargo</div>
+            <div class="w-60 h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">oversized</div>
+        </div>
+        <div class="w-svw h-fit box-border p-10 ">
+            <h1 class="font-serif font-bolod text-4xl py-12 text-center">New Arrivals</h1>
+            <div class="flex gap-8 justify-between">
+            <div style="background-image: url(demo.jpg)" class="w-80 bg-cover bg-center h-96 rounded-3xl bg-green-100 p-3 flex flex-col">
+                <div class="w-68 h-24 font-sans backdrop-blur rounded-xl mt-auto bg-green-100/75 box-border p-5 capitalize"> 
+                    <h1 class="font-sans text-lg">lorem ipsum</h1>
+                    <h4 class="text-gray-700">Rs.450</h4>
+                </div>
+            </div>
+            <div style="background-image: url(demo2.jpg)" class="w-80 bg-cover bg-center h-96 rounded-3xl bg-green-100 p-3 flex flex-col">
+                <div class="w-68 h-24 font-sans backdrop-blur rounded-xl mt-auto bg-green-100/75 box-border p-5 capitalize"> 
+                    <h1 class="font-sans text-lg">lorem ipsum</h1>
+                    <h4 class="text-gray-700">Rs.450</h4>
+                </div>
+            </div>
+            <div style="background-image: url(demo.jpg)" class="w-80 bg-cover bg-center h-96 rounded-3xl bg-green-100 p-3 flex flex-col">
+                <div class="w-68 h-24 font-sans backdrop-blur rounded-xl mt-auto bg-green-100/75 box-border p-5 capitalize"> 
+                    <h1 class="font-sans text-lg">lorem ipsum</h1>
+                    <h4 class="text-gray-700">Rs.450</h4>
+                </div>
+            </div>
+            <div style="background-image: url(demo2.jpg)" class="w-80 bg-cover bg-center h-96 rounded-3xl bg-green-100 p-3 flex flex-col">
+                <div class="w-68 h-24 font-sans backdrop-blur rounded-xl mt-auto bg-green-100/75 box-border p-5 capitalize"> 
+                    <h1 class="font-sans text-lg">lorem ipsum</h1>
+                    <h4 class="text-gray-700">Rs.450</h4>
+                </div>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
