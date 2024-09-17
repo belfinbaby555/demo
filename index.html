@@ -15,6 +15,7 @@
             body,html{
                 margin: 0;
                 font-family: 'Dela Gothic One', sans-serif;
+
             }
             ::-webkit-scrollbar{
                 background-color: white;
@@ -25,14 +26,14 @@
                 border-radius: 100px;
             }
         </style>
-        <div class="w-svw md:h-svh h-fit relative overflow-hidden">
+        <div class="w-svw md:h-svh h-fit relative overflow-hidden ">
         <nav class="w-smv h-20 overflow-hidden flex justify-between box-border px-5 md:px-10"> 
             <!-- options -->
             <div id="bar" class="w-80 duration-500 h-screen bg-white shadow-2xl fixed left-0 box-border z-40 pt-24 text-center -translate-x-full">
                 <a style="font-family: 'Dela Gothic One', sans-serif;" class="font-thin">Home</a>
             </div>
             <!-- options -->
-            <button class="w-8 z-50 h-5 bg-white flex flex-col justify-between my-auto" onclick="sidebar()">
+            <button class="w-8 z-50 h-5 flex flex-col justify-between my-auto" onclick="sidebar()">
                 <span id="bar1" class="w-full block h-1 bg-black rounded-full duration-500"></span>
                 <span id="bar2" class="w-full block h-1 bg-black rounded-full duration-500"></span>
                 <span id="bar3" class="w-full block h-1 bg-black rounded-full duration-500"></span>
@@ -56,16 +57,6 @@
             <img src="./images/man.png" class=" absolute rotate-45 left-24 w-2/5 ">
         </div>
         </div>
-        <div class="grid md:grid-cols-4 grid-cols-1 w-svw h-fit box-border px-5 pt-24 gap-8 py-8">
-            <div style="background-image: url(images/t-shirt.jpg);"
-             class="md:w-64 w-full bg-cover bg-center bg-no-repeat text-white h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">t-shirt</div>
-             <div style="background-image: url(images/casual.jpg);"
-             class="md:w-64 w-full bg-cover bg-center bg-no-repeat text-white h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">casual</div>
-            <div style="background-image: url(images/cargo.jpg);"
-            class="md:w-64 w-full bg-cover bg-center bg-no-repeat text-white h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">cargo</div>
-            <div style="background-image: url(images/jeans.jpg);"
-            class="md:w-64 w-full bg-cover bg-center bg-no-repeat text-white h-28 bg-green-100 text-lg mx-auto text-center content-center font-sans capitalize font-bold rounded-full">jeans</div>
-            </div>
         <div class="w-svw h-fit md:p-10 p-2 box-border flex flex-col">
             <h1 class="font-serif font-bold text-4xl pt-12 text-center">New Arrivals</h1>
             <p class="font-sans text-center pb-12 capitalize">Latest collection added to our wardrobe</p>
@@ -85,7 +76,7 @@
                 </div>
                 <div class="md:w-72 w-52 relative h-fit flex flex-col md:mx-auto md:shadow-xl rounded-xl md:p-2 m-2">
                     <div class="absolute top-3 right-3 bg-black rounded px-2 py-1 text-xs text-white font-sans"> 50% off</div>
-                    <img src="./images/demo.jpg" class="md:w-72 w-52 md:h-72 h-52 object-cover rounded-lg"/>
+                    <img src="./images/t-shirt.jpg" class="md:w-72 w-52 md:h-72 h-52 object-cover rounded-lg"/>
                     <h1 class="font-serif capitalize font-semibold mt-2 text-lg">combo wear</h1>
                     <h4 class="text-gray-700 font-sans mt-2">Cotton</h4>
                     <h4 class="text-gray-600 font-sans mt-2">M | L | XL</h4>
